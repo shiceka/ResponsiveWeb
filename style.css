@@ -1,0 +1,101 @@
+body {
+  background: rgb(218, 191, 243);
+  color: black;
+  font-size: x-large;
+  text-align: center;
+}
+.navbar {
+  position: fixed;
+  top: 0%;
+  height: 75px;
+  padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(127, 138, 117);
+}
+.logo-img {
+  object-fit: contain;
+  height: 150px;
+  min-width: fit-content;
+  left: 0%;
+}
+.links {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  font-size: 17px;
+  right: 0;
+}
+.links:hover {
+  background-color: black;
+  color: antiquewhite;
+}
+#hero-img {
+  height: 20%;
+  min-width: 100%;
+}
+
+#about {
+  height: 100%;
+}
+
+img {
+  border-radius: 45%;
+  width: 150px;
+  height: 150px;
+}
+
+
+.aboutsec {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+}
+
+.prodsec {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.servicesec {
+  display: flex;
+  flex-direction: row;
+}
+
+  @media only screen and (max-width: 768px) {
+    img {
+        border-radius: 45%;
+        width: 100px;
+        height: 100px;
+      }
+      P{
+          font-size: 15px;
+      }
+      .servicesec {
+        display: grid;
+        flex-direction: column; 
+        width:auto;
+      }
+      .prodsec {
+        display: grid;
+        flex-direction: column;
+        width: auto;
+      }
+      .aboutsec {
+        display: block;
+      }
+      .links {
+        float: left;
+        display: grid;
+        flex-direction: column;
+        padding: 0;
+        color: rgb(5, 5, 5);
+        text-decoration: none;
+        font-size: 10px;
+      }      
+  } 
